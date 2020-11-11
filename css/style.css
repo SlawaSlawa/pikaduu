@@ -265,18 +265,18 @@ body {
   background-color: #fafafa;
   border: 1px solid #e8e8e8;
   padding: 15px 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
 .user-info {
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-right: auto;
 }
 .user-avatar {
   border-radius: 50%;
   margin-right: 17px;
+  object-fit: cover;
 }
 .user-name {
   font-weight: 600;
@@ -284,11 +284,78 @@ body {
   line-height: 24px;
   color: #595959;
 }
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .icon-exit {
   width: 20px;
   height: 20px;
   fill: #000;
 }
+
+.edit {
+  margin-right: 10px;
+}
+
+.icon-edit {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-container {
+  display: none;
+}
+
+.edit-container.visible {
+  display: block;
+}
+
+.edit-label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.edit-input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.edit-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #595959;
+  text-transform: uppercase;
+}
+
+.edit-username {
+
+}
+
+.edit-photo {
+
+}
+
+.edit-btn {
+  background-color: #fa8c16;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 32px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 .sidebar-nav {
   display: none;
   background-color: #fff;
